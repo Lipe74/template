@@ -278,9 +278,14 @@ footer { background: var(--color-light); border-top: 2px solid var(--color-borde
 
 <!-- VIDEO – Optionnelle, supprimer si pas de vidéo -->
 <div class="video-section" id="video">
-  <div class="video-wrap">
-    <!-- Remplacer VIMEO_ID par l'ID de la vidéo Vimeo -->
-    <iframe src="https://player.vimeo.com/video/VIMEO_ID" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <div style="max-width:800px;margin:0 auto;padding:20px;">
+    <div style="position:relative;padding-bottom:56.25%;height:0;background:rgba(255,255,255,0.08);border-radius:16px;border:2px dashed rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;overflow:hidden;">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+        <div style="font-size:48px;margin-bottom:12px;">🎬</div>
+        <div style="font-size:18px;font-weight:800;color:white;margin-bottom:6px;">Votre vidéo ici</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);">Remplacer VIMEO_ID par votre ID Vimeo</div>
+      </div>
+    </div>
   </div>
   <div class="video-cta">
     <a href="#contact" class="btn-wa" style="display:inline-flex;margin-top:16px;">
